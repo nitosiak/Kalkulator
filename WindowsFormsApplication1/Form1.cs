@@ -36,18 +36,13 @@ namespace WindowsFormsApplication1
             }
             catch (Exception ex)
             {
-                DialogResult dialogResult = MessageBox.Show("Błąd", ex.Message, MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes  )
+                DialogResult dialogResult = MessageBox.Show(ex.Message, "błąd", MessageBoxButtons.OK);
+                if (dialogResult == DialogResult.OK  )
                 {
                     label1.Text = textBox1.Text + " " + textBox2.Text;
 
                 }
-                else if (dialogResult == DialogResult.No)
-                {
-                    MessageBox.Show("co ty robisz", "",
-                    MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    Application.Restart();
-                }
+                
             }
             lol.lol = String.Format("Wynik dodawania: {0}", x + y);
             label1.Text = lol.lol;
@@ -56,6 +51,21 @@ namespace WindowsFormsApplication1
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

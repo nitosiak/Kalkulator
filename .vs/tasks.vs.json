@@ -1,0 +1,20 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "zadanie-Form1.Designer",
+      "appliesTo": "WindowsFormsApplication1/Form1.Designer.cs",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "zadanie-Properties",
+      "appliesTo": "WindowsFormsApplication1/Properties/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "zadanie-Form1.Designer",
+      "appliesTo": "WindowsFormsApplication1/Form1.Designer.cs",
+      "type": "launch"
+    }
+  ]
+}
